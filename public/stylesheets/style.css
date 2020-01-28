@@ -12,11 +12,16 @@ a {
   justify-content: space-between;
 }
 #menu {
-  /* display: none; */
   font-size: 3rem;
   cursor: pointer;
 }
 
+#home {
+  font-size: 3rem;
+  cursor: pointer;
+  color: #f1f1f1;
+  padding: 8px 8px 8px 0px;
+}
 
 .sidenav {
   height: 100%;

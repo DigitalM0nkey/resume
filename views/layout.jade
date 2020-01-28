@@ -28,7 +28,18 @@ html
 
   body
     #main
-      block navbar
+      #navbar
+        h1= title
+        i#menu.fad.fa-hamburger(onclick="openNav()")
+      #mySidenav.sidenav
+        i#close.fad.fa-times-hexagon.closebtn(onclick="closeNav()")
+        
+        a(href="/")
+          i#home.fad.fa-home 
+        a(href="/about") About
+        a(href="#") Projects
+        a(href="#") History
+        a(href="#") Contact
       block content
   footer
     block stuff
