@@ -14,13 +14,7 @@ a {
 #menu {
   font-size: 3rem;
   cursor: pointer;
-}
-
-#home {
-  font-size: 3rem;
-  cursor: pointer;
-  color: #f1f1f1;
-  padding: 8px 8px 8px 0px;
+  color: saddlebrown;
 }
 
 .sidenav {
@@ -59,13 +53,72 @@ a {
   cursor: pointer;
 }
 
+#home:hover {
+  color: #2196f3;
+}
+
 #main {
-  transition: margin-left .5s;
+  transition: margin-left 0.5s;
   padding: 20px;
 }
 
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+#mySidenav a {
+  position: absolute; 
+  left: -100px;
+  transition: 0.3s;
+  padding: 15px;
+  width: 20vw;
+  text-decoration: none; /* Remove underline */
+  font-size: 20px;
+  color: white;
+  border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
 }
 
+#mySidenav a:hover {
+  left: 0; /* On mouse-over, make the elements appear as they should */
+}
+
+/* The about link: 20px from the top with a green background */
+#home {
+  display: flex;
+  justify-content: space-between;
+  top: 80px;
+  background-color: hotpink;
+}
+
+#about {
+  display: flex;
+  justify-content: space-between;
+  top: 140px;
+  background-color: #4caf50;
+}
+
+#projects {
+  display: flex;
+  justify-content: space-between;
+  top: 200px;
+  background-color: #f44336; /* Red */
+}
+
+#history {
+  display: flex;
+  justify-content: space-between;
+  top: 260px;
+  background-color: #2196f3; /* Blue */
+}
+
+#contact {
+  display: flex;
+  justify-content: space-between;
+  top: 320px;
+  background-color: #555; /* Light Black */
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}

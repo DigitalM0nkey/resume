@@ -11,8 +11,8 @@ html
 
     script.
       function openNav() {
-      document.getElementById("mySidenav").style.width = "50vw"
-      document.getElementById("main").style.marginLeft = "50vw"
+      document.getElementById("mySidenav").style.width = "35vw"
+      document.getElementById("main").style.marginLeft = "35vw"
       document.body.style.backgroundColor = "rgba(0,0,0,0.4)"
       document.getElementById("menu").style.visibility = "hidden"
       }
@@ -34,12 +34,16 @@ html
       #mySidenav.sidenav
         i#close.fad.fa-times-hexagon.closebtn(onclick="closeNav()")
         
-        a(href="/")
-          i#home.fad.fa-home 
-        a(href="/about") About
-        a(href="#") Projects
-        a(href="#") History
-        a(href="#") Contact
+        a(href="/")#home Home 
+          i.fad.fa-home.mi
+        a(href="/about")#about About 
+          i.fad.fa-id-card.mi
+        a(href="/projects")#projects Projects 
+          i.fad.fa-hammer
+        a(href="/history")#history History 
+          i.fad.fa-history
+        a(href="/contact")#contact Contact 
+          i.fad.fa-at
       block content
   footer
     block stuff
