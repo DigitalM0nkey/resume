@@ -7,6 +7,16 @@ a {
   color: #00b7ff;
 }
 
+profile {
+  display: flex;
+  justify-content: center;
+}
+
+#profile {
+  display: flex;
+  width: 50vw;
+}
+
 #navbar {
   display: flex;
   justify-content: space-between;
@@ -63,7 +73,7 @@ a {
 }
 
 #mySidenav a {
-  position: absolute; 
+  position: absolute;
   left: -100px;
   transition: 0.3s;
   padding: 15px;
@@ -75,11 +85,11 @@ a {
 }
 
 #mySidenav a:hover {
-  left: 0; 
+  left: 0;
 }
 
 .mi {
-font-size: 3rem;
+  font-size: 3rem;
 }
 
 #home {
