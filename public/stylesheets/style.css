@@ -1,5 +1,6 @@
 body {
   padding: 50px;
+  padding-top: 0px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
@@ -20,6 +21,7 @@ profile {
 #navbar {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 #menu {
   font-size: 3rem;
