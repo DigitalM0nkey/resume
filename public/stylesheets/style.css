@@ -1,4 +1,8 @@
-body {
+#body {
+  background-image: url("/images/nightMode.jpg");
+  background-size: 200vh;
+  background-position: center;
+  padding: 50px;
   padding: 50px;
   padding-top: 0px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
@@ -16,6 +20,8 @@ profile {
 #profile {
   display: flex;
   width: 50vw;
+  border-radius: 50%;
+  border: dashed;
 }
 
 #navbar {
@@ -27,6 +33,43 @@ profile {
   font-size: 3rem;
   cursor: pointer;
   color: saddlebrown;
+}
+#switch {
+  display: flex;
+  background-color: #424242;
+  border-radius: 25px;
+  margin: 5px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 3px;
+  padding-right: 3px;
+  border-bottom-style: outset;
+  border-right-style: outset;
+  border-top-style: groove;
+  border-left-style: groove;
+  border-color: #616161;
+  /* border-color: deepskyblue; */
+}
+#dayMode {
+  border-style: outset;
+  /* color: gainsboro; */
+  border-radius: 15px;
+  margin: 2px;
+  padding: inherit;
+  /* visibility: visible; */
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #2196f3;
+}
+#nightMode {
+  border-style: inset;
+  border-radius: 15px;
+  margin: 2px;
+  padding: inherit;
+  /* visibility: hidden; */
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #424242;
 }
 
 .sidenav {
