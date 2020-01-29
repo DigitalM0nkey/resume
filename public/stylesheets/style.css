@@ -35,14 +35,18 @@ profile {
   color: saddlebrown;
 }
 #switch {
-  display: flex;
+  display: inline-flex;
+  flex-direction: column;
+  position: absolute;
   background-color: #424242;
-  border-radius: 25px;
+  border-radius: 20px;
   margin: 5px;
-  padding-top: 1px;
-  padding-bottom: 1px;
-  padding-left: 3px;
-  padding-right: 3px;
+  margin-top: 50vh;
+  margin-left: 1.5vw;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 1px;
+  padding-right: 1px;
   border-bottom-style: outset;
   border-right-style: outset;
   border-top-style: groove;
@@ -59,7 +63,7 @@ profile {
   /* visibility: visible; */
   font-size: 1.5rem;
   cursor: pointer;
-  color: #2196f3;
+  color: yellow;
 }
 #nightMode {
   border-style: inset;

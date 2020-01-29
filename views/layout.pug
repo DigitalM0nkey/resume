@@ -30,9 +30,9 @@ html
       function dayMode() {
         console.log("IMAGE",document.body.style.backgroundImage);
         document.getElementById("body").style.backgroundImage="url(/images/dayMode.jpg)";
-        document.getElementById("dayMode").style =  "border-style: inset; color:lightsteelblue";
-        document.getElementById("nightMode").style = "border-style: outset";
-        document.getElementById("switch").style = "background-color: lightsteelblue; border-color: lightsteelblue;";
+        document.getElementById("dayMode").style =  "border-style: inset; color: #424242";
+        document.getElementById("nightMode").style = "border-style: outset; color: #2196f3";
+        document.getElementById("switch").style = "background-color: #424242; border-color: #616161";
  
       }
 
@@ -42,7 +42,7 @@ html
         document.getElementById("body").style.backgroundImage="url(/images/nightMode.jpg)";
         document.getElementById("dayMode").style = "border-style: outset";
         document.getElementById("nightMode").style =  "border-style: inset; color:#424242";
-        document.getElementById("switch").style = "background-color: #424242; border-color: gainsboro";
+        document.getElementById("switch").style = "background-color: #424242; border-color: #616161";
 
       }
 
@@ -50,9 +50,6 @@ html
     #main
       #navbar
         h1= title
-        #switch
-          i#dayMode.fad.fa-house-day(onclick="dayMode()")
-          i#nightMode.fad.fa-house-night(onclick="nightMode()")
         i#menu.fad.fa-hamburger(onclick="openNav()")
       #mySidenav.sidenav
         i#close.fad.fa-times-hexagon.closebtn(onclick="closeNav()")
@@ -67,6 +64,10 @@ html
           i.fad.fa-history.mi
         a(href="/contact")#contact Contact 
           i.fad.fa-at.mi
+
+        utilities#switch
+          i#dayMode.fad.fa-house-day(onclick="dayMode()")
+          i#nightMode.fad.fa-house-night(onclick="nightMode()")
       block content
   footer
     block stuff
