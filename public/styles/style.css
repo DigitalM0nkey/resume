@@ -3,8 +3,8 @@
 }
 
 #body {
-  background-image: url("/images/nightMode.jpg");
-  background-size: 200vh;
+  background: url(/images/night.jpg) no-repeat center center fixed;
+  background-size: cover;
   background-position: center;
   padding: 50px;
   padding: 50px;
@@ -71,6 +71,8 @@ profile {
   font-size: 3rem;
   cursor: pointer;
   color: saddlebrown;
+  position: fixed;
+  margin-left: -60px;
 }
 
 #switch {
@@ -85,7 +87,7 @@ profile {
   background-color: #424242;
   border-radius: 20px;
   margin: 5px;
-  margin-top: 50vh;
+  margin-top: 500px;
   margin-left: 1.5vw;
   padding-top: 3px;
   padding-bottom: 3px;
