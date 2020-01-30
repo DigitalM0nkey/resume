@@ -8,10 +8,15 @@ $dayPrimaryColor: #673ab7;
 }
 
 #body {
-  background-image: url("/images/nightMode.jpg");
-  background-size: 200vh;
+  background-image: url(https://images.pexels.com/photos/713664/pexels-photo-713664.jpeg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   background-position: center;
-  padding: 50px;
+  min-height: 100vh;
+  position: relative;
+  height: 100%;
   padding: 50px;
   padding-top: 0px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
@@ -30,24 +35,40 @@ profile {
   display: flex;
   position: absolute;
   width: 50vw;
+  height: 50vw;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
   border-radius: 50%;
+  -khtml-border-radius: 50%;
   border: outset;
-  border-color: #f44336;
+  border-color: #582ffc;
   z-index: 3;
 }
 #profileBackgroundDay {
   display: none;
   width: 50vw;
+  height: 50vw;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
   border-radius: 50%;
+  -khtml-border-radius: 50%;
   border: inset;
   z-index: 1;
+  -webkit-animation: spin 60s linear infinite;
+  -moz-animation: spin 60s linear infinite;
+  animation: spin 60s linear infinite;
 }
+
 #profileBackgroundNight {
   display: flex;
   width: 50vw;
+  height: 50vw;
   border-radius: 50%;
   border: inset;
   z-index: 2;
+  -webkit-animation: spin 60s linear infinite;
+  -moz-animation: spin 60s linear infinite;
+  animation: spin 60s linear infinite;
 }
 
 #navbar {
@@ -59,6 +80,8 @@ profile {
   font-size: 3rem;
   cursor: pointer;
   color: saddlebrown;
+  position: fixed;
+  margin-left: -60px;
 }
 #switch {
   display: inline-flex;
@@ -213,5 +236,22 @@ profile {
   }
   .sidenav a {
     font-size: 18px;
+  }
+}
+
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
