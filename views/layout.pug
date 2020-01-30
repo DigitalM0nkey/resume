@@ -2,10 +2,14 @@ doctype html
 html
   head
     title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/styles/style.css')
 
-    script(src="https://kit.fontawesome.com/7761726a7c.js" crossorigin="anonymous")
+    script(src="https://kit.fontawesome.com/7761726a7c.js" )
 
+    script(src="/javascripts/dayNight.js")
+    
+    script(src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous")
+  
     script. 
       src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"
 
@@ -26,34 +30,12 @@ html
       document.getElementById("menu").style.visibility = "visible";
       }
 
-    script.
-      function dayMode() {
-        console.log("IMAGE",document.body.style.backgroundImage);
-        document.getElementById("body").style.backgroundImage="url(/images/dayMode.jpg)";
-        document.getElementById('profileBackgroundDay').style = "display: flex";
-        document.getElementById('profileBackgroundNight').style = "display: none";
-        document.getElementById("dayMode").style =  "border-style: inset; color: #424242";
-        document.getElementById("nightMode").style = "border-style: outset; color: #2196f3";
-        document.getElementById("switch").style = "background-color: #424242; border-color: #616161";
- 
-      }
-
-    script.
-      function nightMode() {
-        console.log("IMAGE",document.body.style.backgroundImage);
-        document.getElementById("body").style.backgroundImage="url(/images/nightMode.jpg)";
-        document.getElementById('profileBackgroundDay').style = "display: none";
-        document.getElementById('profileBackgroundNight').style = "display: flex";
-        document.getElementById("dayMode").style = "border-style: outset";
-        document.getElementById("nightMode").style =  "border-style: inset; color:#424242";
-        document.getElementById("switch").style = "background-color: #424242; border-color: #616161";
-
-      }
+    
 
   body#body
     #main
       #navbar
-        h1= title
+        h1.dayNight= title
         i#menu.fad.fa-hamburger(onclick="openNav()")
       #mySidenav.sidenav
         i#close.fad.fa-times-hexagon.closebtn(onclick="closeNav()")
@@ -73,5 +55,8 @@ html
           i#dayMode.fad.fa-house-day(onclick="dayMode()")
           i#nightMode.fad.fa-house-night(onclick="nightMode()")
       block content
+
+
+     
   footer
     block stuff
