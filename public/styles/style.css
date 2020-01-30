@@ -279,6 +279,11 @@ profile {
   /* Light Black */
 }
 
+.like {
+  font-size: 5rem;
+  margin: 2rem;
+}
+
 @media screen and (max-height: 450px) {
   .sidenav {
     padding-top: 15px;
