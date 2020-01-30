@@ -19,9 +19,25 @@ profile {
 
 #profile {
   display: flex;
+  position: absolute;
   width: 50vw;
   border-radius: 50%;
   border: dashed;
+  z-index: 3;
+}
+#profileBackgroundDay {
+  display: none;
+  width: 50vw;
+  border-radius: 50%;
+  border: dashed;
+  z-index: 1;
+}
+#profileBackgroundNight {
+  display: flex;
+  width: 50vw;
+  border-radius: 50%;
+  border: dashed;
+  z-index: 2;
 }
 
 #navbar {
