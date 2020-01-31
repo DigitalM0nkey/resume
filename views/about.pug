@@ -1,58 +1,70 @@
 extends layout
 
 block content
-  p this is about?
-  .dayNight.fad.fa-head-vr.like
-  .dayNight.fad.fa-drone-alt.like
-  .dayNight.fad.fa-magic.like
-  .dayNight.fad.fa-music.like
-  .dayNight.fad.fa-ship.like
-  .dayNight.fad.fa-camera-movie.like
-  .dayNight.fad.fa-campfire.like
-  .dayNight.fad.fa-cat.like
-  .dayNight.fad.fa-cctv.like
-  .dayNight.fad.fa-chess.like
-  .dayNight.fad.fa-child.like
-  .dayNight.fad.fa-space-shuttle.like
-  .dayNight.fad.fa-dice.like
-  .dayNight.fad.fa-french-fries.like
-  .dayNight.fad.fa-guitar.like
-  .dayNight.fad.fa-hot-tub.like
-  .dayNight.fad.fa-island-tropical.like
-  .dayNight.fad.fa-laptop-code.like 
-  .dayNight.fad.fa-pie.like 
-  .dayNight.fad.fa-plane-departure.like
-  .dayNight.fad.fa-map-pin.like
-  .dayNight.fad.fa-microscope.like
-  .dayNight.fad.fa-person-booth.like
-  .dayNight.fal.fa-planet-moon.like
-  .dayNight.fad.fa-podcast.like
-  .dayNight.fad.fa-portal-enter.like
-  .dayNight.fad.fa-recycle.like
-  .dayNight.fad.fa-road.like
-  .dayNight.fad.fa-sack-dollar.like
-  .dayNight.fad.fa-snowboarding.like
-  .dayNight.fad.fa-snowflakes.like
-  .dayNight.fad.fa-solar-system.like
-  .dayNight.fad.fa-construction.like
-  .dayNight.fad.fa-gamepad-alt.like
-  .dayNight.fad.fa-hat-chef.like
-  .dayNight.fad.fa-handshake.like
-  .dayNight.fad.fa-hiking.like
-  .dayNight.fad.fa-steak.like
-  .dayNight.fad.fa-telescope.like
-  .dayNight.fab.fa-telegram.like
-  .dayNight.fad.fa-turtle.like
-  .dayNight.fad.fa-unicorn.like
-  .dayNight.fad.fa-user-astronaut.like
-  .dayNight.fad.fa-user-robot.like
-  .dayNight.fad.fa-venus.like
-  .dayNight.fad.fa-volcano.like
-  .dayNight.fad.fa-yin-yang.like
+  p.dayNight These are things that I like. Pick a few, add them to your conversation bubble. Then lets go get a coffee or a beer and chat about them. 
+  
+  i.dayNight.fad.fa-head-vr.like.cartItem(onclick="a2c('VR')")
+  .dayNight.fad.fa-drone-alt.like(onclick="a2c('Drones')")
+  .dayNight.fad.fa-laptop-code.like(onclick="a2c('Code')") 
+  .dayNight.fad.fa-music.like(onclick="a2c('Music')")
+  .dayNight.fab.fa-bitcoin.like(onclick="a2c('Crypto')")
+  .dayNight.fad.fa-ship.like(onclick="a2c('Cruise Ships')")
+  .dayNight.fad.fa-camera-movie.like(onclick="a2c('Film Making')")
+  .dayNight.fad.fa-campfire.like(onclick="a2c('Camping')")
+  .dayNight.fad.fa-island-tropical.like(onclick="a2c('Tropical Islands')")
+  .dayNight.fad.fa-cat.like(onclick="a2c('Kitty Cats')")
+  .dayNight.fad.fa-magic.like(onclick="a2c('Magic')")
+  .dayNight.fad.fa-chess.like(onclick="a2c('Board Games')")
+  .dayNight.fad.fa-child.like(onclick="a2c('Children')")
+  .dayNight.fad.fa-space-shuttle.like(onclick="a2c('Space')")
+  .dayNight.fad.fa-dice.like(onclick="a2c('Games')")
+  .dayNight.fad.fa-french-fries.like(onclick="a2c('French Fries')")
+  .dayNight.fad.fa-guitar.like(onclick="a2c('Guitar')")
+  .dayNight.fad.fa-hot-tub.like(onclick="a2c('Hot Tubs')")
+  .dayNight.fad.fa-pie.like(onclick="a2c('Meat Pies')") 
+  .dayNight.fad.fa-plane-departure.like(onclick="a2c('Flying')")
+  .dayNight.fad.fa-map-pin.like(onclick="a2c('Exploring')")
+  .dayNight.fad.fa-microscope.like(onclick="a2c('Science')")
+  .dayNight.fad.fa-person-booth.like(onclick="a2c('Photo Booths')")
+  .dayNight.fal.fa-planet-moon.like(onclick="a2c('Our Earth and Moon')")
+  .dayNight.fad.fa-podcast.like(onclick="a2c('Podcasts')")
+  .dayNight.fad.fa-portal-enter.like(onclick="a2c('Portal')")
+  .dayNight.fad.fa-recycle.like(onclick="a2c('Recycling')")
+  .dayNight.fad.fa-road.like(onclick="a2c('Driving')")
+  .dayNight.fad.fa-sack-dollar.like(onclick="a2c('Money, Money, Money!')")
+  .dayNight.fad.fa-snowboarding.like(onclick="a2c('Snowboarding')")
+  .dayNight.fad.fa-snowflakes.like(onclick="a2c('Snow')")
+  .dayNight.fad.fa-solar-system.like(onclick="a2c('Our Solar System')")
+  .dayNight.fad.fa-construction.like(onclick="a2c('Construction')")
+  .dayNight.fad.fa-gamepad-alt.like(onclick="a2c('Xbox')")
+  .dayNight.fad.fa-hat-chef.like(onclick="a2c('Cooking')")
+  .dayNight.fad.fa-handshake.like(onclick="a2c('Networking')")
+  .dayNight.fad.fa-hiking.like(onclick="a2c('Hiking')")
+  .dayNight.fad.fa-steak.like(onclick="a2c('Steak')")
+  .dayNight.fad.fa-telescope.like(onclick="a2c('Sky Watching')")
+  .dayNight.fab.fa-telegram.like(onclick="a2c('Telegram')")
+  .dayNight.fad.fa-turtle.like(onclick="a2c('Turtles')")
+  .dayNight.fad.fa-unicorn.like(onclick="a2c('Unicorns')")
+  .dayNight.fad.fa-user-astronaut.like(onclick="a2c('Space Exploration')")
+  .dayNight.fad.fa-user-robot.like(onclick="a2c('Android')")
+  .dayNight.fad.fa-volcano.like(onclick="a2c('Valcanos')")
+  .dayNight.fad.fa-yin-yang.like(onclick="a2c('Calm, Balance, Mindfulness')")
+  <span class="cartItem"></span>
+  //- span.cartItem
 
 
+  // Add to cart credit: https://codepen.io/designcouch/pen/OJPdZxg 
+
+  <div id="cart" class="cart" data-totalitems="0">
+  i.fad.fa-comments-alt
+  </div>
+
+  //- <div class="page-wrapper">
+  //- <button id="addtocart", onclick="a2c()" >Add to Cart<span class="cartItem"></span>
+  //- </button>
+  //- </div>
 
 
-
-  p.dayNight I don't like 
+  p I don't like 
     <i class="fad fa-cricket"></i>
+      
