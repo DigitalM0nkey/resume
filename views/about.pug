@@ -2,58 +2,289 @@ extends layout
 
 block content
   p.dayNight These are things that I like. Pick a few, add them to your conversation bubble. Then lets go get a coffee or a beer and chat about them. 
-  
-  i.dayNight.fad.fa-head-vr.like.cartItem(onclick="a2c('VR')")
-  .dayNight.fad.fa-drone-alt.like(onclick="a2c('Drones')")
-  .dayNight.fad.fa-laptop-code.like(onclick="a2c('Code')") 
-  .dayNight.fad.fa-music.like(onclick="a2c('Music')")
-  .dayNight.fab.fa-bitcoin.like(onclick="a2c('Crypto')")
-  .dayNight.fad.fa-ship.like(onclick="a2c('Cruise Ships')")
-  .dayNight.fad.fa-camera-movie.like(onclick="a2c('Film Making')")
-  .dayNight.fad.fa-campfire.like(onclick="a2c('Camping')")
-  .dayNight.fad.fa-island-tropical.like(onclick="a2c('Tropical Islands')")
-  .dayNight.fad.fa-cat.like(onclick="a2c('Kitty Cats')")
-  .dayNight.fad.fa-magic.like(onclick="a2c('Magic')")
-  .dayNight.fad.fa-chess.like(onclick="a2c('Board Games')")
-  .dayNight.fad.fa-child.like(onclick="a2c('Children')")
-  .dayNight.fad.fa-space-shuttle.like(onclick="a2c('Space')")
-  .dayNight.fad.fa-dice.like(onclick="a2c('Games')")
-  .dayNight.fad.fa-french-fries.like(onclick="a2c('French Fries')")
-  .dayNight.fad.fa-guitar.like(onclick="a2c('Guitar')")
-  .dayNight.fad.fa-hot-tub.like(onclick="a2c('Hot Tubs')")
-  .dayNight.fad.fa-pie.like(onclick="a2c('Meat Pies')") 
-  .dayNight.fad.fa-plane-departure.like(onclick="a2c('Flying')")
-  .dayNight.fad.fa-map-pin.like(onclick="a2c('Exploring')")
-  .dayNight.fad.fa-microscope.like(onclick="a2c('Science')")
-  .dayNight.fad.fa-person-booth.like(onclick="a2c('Photo Booths')")
-  .dayNight.fal.fa-planet-moon.like(onclick="a2c('Our Earth and Moon')")
-  .dayNight.fad.fa-podcast.like(onclick="a2c('Podcasts')")
-  .dayNight.fad.fa-portal-enter.like(onclick="a2c('Portal')")
-  .dayNight.fad.fa-recycle.like(onclick="a2c('Recycling')")
-  .dayNight.fad.fa-road.like(onclick="a2c('Driving')")
-  .dayNight.fad.fa-sack-dollar.like(onclick="a2c('Money, Money, Money!')")
-  .dayNight.fad.fa-snowboarding.like(onclick="a2c('Snowboarding')")
-  .dayNight.fad.fa-snowflakes.like(onclick="a2c('Snow')")
-  .dayNight.fad.fa-solar-system.like(onclick="a2c('Our Solar System')")
-  .dayNight.fad.fa-construction.like(onclick="a2c('Construction')")
-  .dayNight.fad.fa-gamepad-alt.like(onclick="a2c('Xbox')")
-  .dayNight.fad.fa-hat-chef.like(onclick="a2c('Cooking')")
-  .dayNight.fad.fa-handshake.like(onclick="a2c('Networking')")
-  .dayNight.fad.fa-hiking.like(onclick="a2c('Hiking')")
-  .dayNight.fad.fa-steak.like(onclick="a2c('Steak')")
-  .dayNight.fad.fa-telescope.like(onclick="a2c('Sky Watching')")
-  .dayNight.fab.fa-telegram.like(onclick="a2c('Telegram')")
-  .dayNight.fad.fa-turtle.like(onclick="a2c('Turtles')")
-  .dayNight.fad.fa-unicorn.like(onclick="a2c('Unicorns')")
-  .dayNight.fad.fa-user-astronaut.like(onclick="a2c('Space Exploration')")
-  .dayNight.fad.fa-user-robot.like(onclick="a2c('Android')")
-  .dayNight.fad.fa-volcano.like(onclick="a2c('Valcanos')")
-  .dayNight.fad.fa-yin-yang.like(onclick="a2c('Calm, Balance, Mindfulness')")
+  ul
+    li
+      .i
+        label
+          input(type="checkbox" name="")
+          .icon-box
+            i.fad.fa-head-vr.like.cartItem(onclick="a2c('VR')")
+    li
+      .i
+        label
+          input(type="checkbox" name="")
+          .icon-box
+            .fad.fa-drone-alt.like(onclick="a2c('Drones')")
+    li
+      .i
+        label
+          input(type="checkbox" name="")
+          .icon-box
+            .fad.fa-laptop-code.like(onclick="a2c('Code')")
+    li
+      .i
+        label
+          input(type="checkbox" name="")
+          .icon-box 
+            .fad.fa-music.like(onclick="a2c('Music')")
+    li
+      .i
+        label
+          input(type="checkbox" name="")
+          .icon-box            
+            .fab.fa-bitcoin.like(onclick="a2c('Crypto')")
+    li
+      .i
+        label
+          input(type="checkbox" name="")
+          .icon-box
+            .fad.fa-ship.like(onclick="a2c('Cruise Ships')")
+    li
+      .i
+        label
+          input(type="checkbox" name="")
+          .icon-box
+            .fad.fa-camera-movie.like(onclick="a2c('Film Making')")
+    li
+      .i
+        label
+          input(type="checkbox" name="")
+          .icon-box
+            .fad.fa-campfire.like(onclick="a2c('Camping')")
+    li
+      .i
+        label
+          input(type="checkbox" name="")
+          .icon-box
+            .fad.fa-island-tropical.like(onclick="a2c('Tropical Islands')")
+    li
+      .i
+        label
+          input(type="checkbox" name="")
+          .icon-box
+            .fad.fa-cat.like(onclick="a2c('Kitty Cats')")
+    li
+      .i
+        label
+          input(type="checkbox" name="")
+          .icon-box
+            .fad.fa-magic.like(onclick="a2c('Magic')")
+    li
+      .i
+        label
+          input(type="checkbox" name="")
+          .icon-box
+            .fad.fa-chess.like(onclick="a2c('Board Games')")
+    li
+      .i
+        label
+          input(type="checkbox" name="")
+          .icon-box
+            .fad.fa-child.like(onclick="a2c('Children')")
+    li
+      .i
+        label
+          input(type="checkbox" name="")
+          .icon-box
+            .fad.fa-space-shuttle.like(onclick="a2c('Space')")
+    li
+      .i
+        label
+          input(type="checkbox" name="")
+          .icon-box
+            .fad.fa-dice.like(onclick="a2c('Games')")
+    li
+      .i
+        label
+          input(type="checkbox" name="")
+          .icon-box
+            .fad.fa-french-fries.like(onclick="a2c('French Fries')")
+    li
+      .i
+        label
+          input(type="checkbox" name="")
+          .icon-box
+            .fad.fa-guitar.like(onclick="a2c('Guitar')")
+    li
+      .i
+        label
+          input(type="checkbox" name="")
+          .icon-box
+            .fad.fa-hot-tub.like(onclick="a2c('Hot Tubs')")
+    li
+      .i
+        label
+          input(type="checkbox" name="")
+          .icon-box
+            .fad.fa-pie.like(onclick="a2c('Meat Pies')")
+    li
+      .i
+        label
+          input(type="checkbox" name="")
+          .icon-box
+            .fad.fa-plane-departure.like(onclick="a2c('Flying')")
+    li
+      .i
+        label
+          input(type="checkbox" name="")
+          .icon-box
+            .fad.fa-map-pin.like(onclick="a2c('Exploring')")
+    li
+      .i
+        label
+          input(type="checkbox" name="")
+          .icon-box
+            .fad.fa-microscope.like(onclick="a2c('Science')")
+    li
+      .i
+        label
+          input(type="checkbox" name="")
+          .icon-box
+            .fad.fa-person-booth.like(onclick="a2c('Photo Booths')")
+    li
+      .i
+        label
+          input(type="checkbox" name="")
+          .icon-box
+            .fal.fa-planet-moon.like(onclick="a2c('Our Earth and Moon')")
+    li
+      .i
+        label
+          input(type="checkbox" name="")
+          .icon-box
+            .fad.fa-podcast.like(onclick="a2c('Podcasts')")
+    li
+      .i
+        label
+          input(type="checkbox" name="")
+          .icon-box
+            .fad.fa-portal-enter.like(onclick="a2c('Portal')")
+    li
+      .i
+        label
+          input(type="checkbox" name="")
+          .icon-box
+            .fad.fa-recycle.like(onclick="a2c('Recycling')")
+    li
+      .i
+        label
+          input(type="checkbox" name="")
+          .icon-box
+            .fad.fa-road.like(onclick="a2c('Driving')")
+    li
+      .i
+        label
+          input(type="checkbox" name="")
+          .icon-box
+            .fad.fa-sack-dollar.like(onclick="a2c('Money, Money, Money!')")
+    li
+      .i
+        label
+          input(type="checkbox" name="")
+          .icon-box
+            .fad.fa-snowboarding.like(onclick="a2c('Snowboarding')")
+    li
+      .i
+        label
+          input(type="checkbox" name="")
+          .icon-box
+            .fad.fa-snowflakes.like(onclick="a2c('Snow')")
+    li
+      .i
+        label
+          input(type="checkbox" name="")
+          .icon-box
+            .fad.fa-solar-system.like(onclick="a2c('Our Solar System')")
+    li
+      .i
+        label
+          input(type="checkbox" name="")
+          .icon-box
+            .fad.fa-construction.like(onclick="a2c('Construction')")
+    li
+      .i
+        label
+          input(type="checkbox" name="")
+          .icon-box
+            .fad.fa-gamepad-alt.like(onclick="a2c('Xbox')")
+    li
+      .i
+        label
+          input(type="checkbox" name="")
+          .icon-box
+            .fad.fa-hat-chef.like(onclick="a2c('Cooking')")
+    li
+      .i
+        label
+          input(type="checkbox" name="")
+          .icon-box
+            .fad.fa-handshake.like(onclick="a2c('Networking')")
+    li
+      .i
+        label
+          input(type="checkbox" name="")
+          .icon-box
+            .fad.fa-hiking.like(onclick="a2c('Hiking')")
+    li
+      .i
+        label
+          input(type="checkbox" name="")
+          .icon-box
+            .fad.fa-steak.like(onclick="a2c('Steak')")
+    li
+      .i
+        label
+          input(type="checkbox" name="")
+          .icon-box
+            .fad.fa-telescope.like(onclick="a2c('Sky Watching')")
+    li
+      .i
+        label
+          input(type="checkbox" name="")
+          .icon-box
+            .fab.fa-telegram.like(onclick="a2c('Telegram')")
+    li
+      .i
+        label
+          input(type="checkbox" name="")
+          .icon-box
+            .fad.fa-turtle.like(onclick="a2c('Turtles')")
+    li
+      .i
+        label
+          input(type="checkbox" name="")
+          .icon-box
+            .fad.fa-unicorn.like(onclick="a2c('Unicorns')")
+    li
+      .i
+        label
+          input(type="checkbox" name="")
+          .icon-box
+            .fad.fa-user-astronaut.like(onclick="a2c('Space Exploration')")
+    li
+      .i
+        label
+          input(type="checkbox" name="")
+          .icon-box
+            .fad.fa-user-robot.like(onclick="a2c('Android')")
+    li
+      .i
+        label
+          input(type="checkbox" name="")
+          .icon-box
+            .fad.fa-volcano.like(onclick="a2c('Valcanos')")
+    li
+      .i
+        label
+          input(type="checkbox" name="")
+          .icon-box
+            .fad.fa-yin-yang.like(onclick="a2c('Calm, Balance, Mindfulness')")
   <span class="cartItem"></span>
   //- span.cartItem
 
 
   // Add to cart credit: https://codepen.io/designcouch/pen/OJPdZxg 
+  // Neuomorphic Checkboxes (https://codepen.io/braydoncoyer/pen/yLyrWOq
 
   <div id="cart" class="cart" data-totalitems="0">
   i.fad.fa-comments-alt
@@ -67,4 +298,7 @@ block content
 
   p I don't like 
     <i class="fad fa-cricket"></i>
+
+
+    
       

@@ -231,7 +231,8 @@ profile {
 }
 
 .like {
-  font-size: 5rem;
+  top: 3px;
+  font-size: 3rem;
   margin: 2rem;
 }
 
@@ -323,6 +324,74 @@ profile {
   }
   &.shake {
     animation: shakeCart 0.4s ease-in-out forwards;
+  }
+}
+
+.center {
+  text-align: center;
+}
+
+ul {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  padding: 20px;
+  width: 85vw;
+
+  background: #ebf5fc;
+  box-shadow: -2px -2px 5px rgba(255, 255, 255, 1),
+    3px 3px 5px rgba(0, 0, 0, 0.1);
+
+  & li {
+    position: relative;
+    list-style: none;
+    text-align: center;
+    margin: 15px;
+
+    & label {
+      position: relative;
+      cursor: pointer;
+
+      & input[type="checkbox"] {
+        position: absolute;
+        opacity: 0;
+      }
+
+      & :hover ~ .icon-box {
+        color: saddlebrown;
+      }
+
+      & :checked ~ .icon-box {
+        color: saddlebrown;
+        box-shadow: inset -2px -2px 5px rgba(255, 255, 255, 1),
+          inset 3px 3px 5px rgba(0, 0, 0, 0.1);
+
+        & .fa {
+          transform: scale(0.95);
+        }
+      }
+
+      & .icon-box {
+        width: 60px;
+        height: 60px;
+        color: #5d5851;
+        background: #ebf5fc;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: -2px -2px 5px rgba(255, 255, 255, 1),
+          3px 3px 5px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+
+        & .fa {
+          font-size: 30px;
+          color: #6a9bd8;
+        }
+      }
+    }
   }
 }
 
